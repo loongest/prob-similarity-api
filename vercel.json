@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "similarity.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "similarity.py"
+      }
+    ]
+ }
