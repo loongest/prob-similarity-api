@@ -4,10 +4,12 @@ from sentence_transformers import SentenceTransformer, util
 import os
 
 app = FastAPI()
+model_name = "paraphrase-albert-small-v2"
 
 # Load model from local files with error handling
+# optional use smaller model: paraphrase-albert-small-v2
 try:
-    model_path = os.path.join(os.path.dirname(__file__), "models", "all-MiniLM-L6-v2")
+    model_path = os.path.join(os.path.dirname(__file__), "models", model_name)
     model = SentenceTransformer(model_path)
 except Exception as e:
     print(f"Model load error: {e}")
