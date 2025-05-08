@@ -18,12 +18,12 @@ uvicorn similarity_api:app --reload
 
  -- or specify port --
 
-uvicorn similarity:app --host 0.0.0.0 --port 8000
+uvicorn similarity:app --host 0.0.0.0 --port 5001
 ```
 
 ## Test
 ```bash
-curl -X POST http://localhost:8000/similarity -H "Content-Type: application/json" -d '{"a": "General Expense", "b": "Rental Expense"}'
+curl -X POST http://localhost:5001/similarity -H "Content-Type: application/json" -d '{"a": "General Expense", "b": "Rental Expense"}'
 ```
 
 

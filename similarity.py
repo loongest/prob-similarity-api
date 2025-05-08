@@ -3,10 +3,11 @@ from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer, util
 import os
 
+app = FastAPI()
+
 # Dynamically get model name (or use default)
 model_name = os.getenv("MODEL_NAME", "all-MiniLM-L6-v2")
 model_path = os.path.join(os.path.dirname(__file__), "models", model_name)
-
 
 # Try loading the local model
 try:
