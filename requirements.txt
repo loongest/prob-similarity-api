@@ -1,4 +1,4 @@
 uvicorn
-sentence-transformers
+sentence-transformers>=2.2.2
 pydantic
- 
+fastapi
