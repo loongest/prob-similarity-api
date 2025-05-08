@@ -5,8 +5,8 @@
         "src": "similarity.py",
         "use": "@vercel/python",
         "config": {
-          "maxLambdaSize": "15mb",
-          "includeFiles": ["**/*.py", "requirements.txt"]
+          "maxLambdaSize": "50mb",
+          "includeFiles": ["**/*.py", "requirements.txt", "models/**"]
         }
       }
     ],
