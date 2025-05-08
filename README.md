@@ -33,3 +33,7 @@ curl -X POST http://localhost:8000/similarity -H "Content-Type: application/json
 * Prepare the FastAPI Project for Deployment
 * In the project directory, update the code in a Python file, similarity_api.py. 
 * You will need to create a static folder and save a placeholder favicon.ico (Vercel looks for this file when deploying the API using the FastHTML Framework)
+* Login to vercel, login, and click new project
+* Select import from git repository from github 
+* Select the project and select "FastHTML"
+* Reference: https://blog.nnitiwe.io/p/deploy-fastapi-on-vercel-how-to-host
